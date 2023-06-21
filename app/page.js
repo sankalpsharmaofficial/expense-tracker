@@ -101,7 +101,7 @@ export default function Home() {
 							>
 								<div className="p-4 w-full flex justify-between text-white">
 									<span className="capitalize">{item.name}</span>
-									<span>₹{item.price}</span>
+									<span>₹{' ' + item.price}</span>
 								</div>
 								<button
 									onClick={() => deleteItem(item.id)}
@@ -117,7 +117,7 @@ export default function Home() {
 					) : (
 						<div className="flex justify-between p-3 text-white">
 							<span>Total</span>
-							<span>₹{total}</span>
+							<span>₹{' ' + total}</span>
 						</div>
 					)}
 				</div>
