@@ -54,6 +54,7 @@ export default function Home() {
 				setTotal(totalPrice);
 			};
 			calculateTotal();
+
 			return () => unsubscribe();
 		});
 	}, []);
